@@ -32,7 +32,10 @@ print(days)  # prints 418
 
 ## Planned
 
-- ISDA and PSA methods.
+- ISDA, PSA and SIA methods
+  - https://www.isda.org/2008/12/22/30-360-day-count-conventions/)
+  - https://web.archive.org/web/20160425044113/http://www.nyift.com/lesson/day-count-convention-bonds/
+  - https://github.com/miradulo/isda_daycounters
 
 ## Notes and credits
 
