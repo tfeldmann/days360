@@ -1,5 +1,4 @@
 """
-Port of the ruby library https://github.com/tamaloa/days360/tree/master
 Implementation as given by https://en.wikipedia.org/wiki/360-day_calendar
 """
 from datetime import date as Date

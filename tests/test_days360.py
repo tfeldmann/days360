@@ -27,9 +27,10 @@ def test_day360_US():
     assert days360_US(date(2012, 1, 23), date(2012, 12, 31)) == 338
     assert days360_US(date(2012, 3, 19), date(2012, 12, 31)) == 282
     assert days360_US(date(2012, 1, 1), date(2012, 12, 31)) == 360
-    
-    # from https://www.mathworks.com/help/finance/days360.html
-#     NumDays = days360(datetime(2000,1,15) , datetime(2000,3,15))
+
+
+# from https://www.mathworks.com/help/finance/days360.html
+# NumDays = days360(datetime(2000,1,15) , datetime(2000,3,15))
 # NumDays = 60
 # Determine the NumDays using a datetime array for EndDate.
 
