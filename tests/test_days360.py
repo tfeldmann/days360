@@ -58,7 +58,8 @@ def test_apple_numbers_examples():
 # EndDate = '1-Feb-2002';
 # NumDays = days360psa(StartDate, EndDate)
 # NumDays = 30
-# Determine the NumDays in the month of January using datetimes for StartDate and EndDate.
+# Determine the NumDays in the month of January using datetimes for StartDate and
+# EndDate.
 
 # NumDays = days360psa(datetime(2002,1,1) , datetime(2002,2,1))
 # NumDays = 30
@@ -78,7 +79,8 @@ def test_apple_numbers_examples():
 # EndDate = '1-Feb-2002';
 # NumDays = days360isda(StartDate, EndDate)
 # NumDays = 30
-# Determine the NumDays in the month of January using datetimes for StartDate and EndDate.
+# Determine the NumDays in the month of January using datetimes for StartDate and
+# EndDate.
 
 # NumDays = days360isda(datetime(2002,1,1), datetime(2002,2,1))
 # NumDays = 30
