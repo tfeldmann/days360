@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Calculates the days between two dates based on a 360 day year."
 authors = ["Thomas Feldmann <mail@tfeldmann.de>"]
 license = "MIT"
-readme = "README.md"
+readme = "Readme.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
