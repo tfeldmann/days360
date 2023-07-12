@@ -29,6 +29,16 @@ def test_day360_US():
     assert days360_US(date(2012, 1, 1), date(2012, 12, 31)) == 360
 
 
+def test_apple_numbers_examples():
+    # =TAGE360("20.12.2008";"31.03.2009") liefert den Ergebniswert 101T.
+    assert days360_US(date(2008, 12, 20), date(2009, 3, 31)) == 101
+    # =TAGE360("27.2.2008";"31.3.2009";0) liefert den Ergebniswert 394T.
+    assert days360_US(date(2008, 2, 27), date(2009, 3, 31)) == 394
+    # =TAGE360("27.2.2008";"31.03.2009";1) liefert den Ergebniswert 393T, da die
+    # europäische Berechnungsmethode verwendet wird.
+    assert days360_EU(date(2008, 2, 27), date(2009, 3, 31)) == 393
+
+
 # from https://www.mathworks.com/help/finance/days360.html
 # NumDays = days360(datetime(2000,1,15) , datetime(2000,3,15))
 # NumDays = 60
