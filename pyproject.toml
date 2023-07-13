@@ -1,10 +1,23 @@
 [tool.poetry]
 name = "days360"
 version = "1.0.0"
-description = "Calculates the days between two dates based on a 360 day year."
+description = "Excel's DAYS360() formula for python."
 authors = ["Thomas Feldmann <mail@tfeldmann.de>"]
 license = "MIT"
-readme = "Readme.md"
+readme = "README.md"
+repository = "https://github.com/tfeldmann/organize"
+keywords = [
+    "excel",
+    "formula",
+    "finance",
+    "days360",
+]
+classifiers = [
+    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
