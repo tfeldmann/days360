@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "days360"
-version = "1.0.0"
+version = "1.0.1"
 description = "Excel's DAYS360() formula for python."
 authors = ["Thomas Feldmann <mail@tfeldmann.de>"]
 license = "MIT"
