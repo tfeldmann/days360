@@ -28,6 +28,9 @@ ruff = "^0.0.277"
 mypy = "^1.4.1"
 pytest = "^7.4.0"
 
+[tool.ruff]
+line-length = 88
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
