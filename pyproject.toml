@@ -1,11 +1,11 @@
-[tool.poetry]
+[project]
 name = "days360"
 version = "1.0.2"
 description = "Excel's DAYS360() formula for python."
-authors = ["Thomas Feldmann <mail@tfeldmann.de>"]
-license = "MIT"
+authors = [{ name = "Thomas Coenen", email = "mail@tcoenen.de" }]
+requires-python = "~=3.8"
 readme = "README.md"
-repository = "https://github.com/tfeldmann/days360"
+license = "MIT"
 keywords = [
     "excel",
     "formula",
@@ -13,24 +13,24 @@ keywords = [
     "days360",
 ]
 classifiers = [
-    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
     "Development Status :: 5 - Production/Stable",
     "Operating System :: OS Independent",
     "Typing :: Typed",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.8"
+[project.urls]
+Repository = "https://github.com/tfeldmann/days360"
 
+[dependency-groups]
+dev = [
+    "ruff>=0.0.277,<0.0.278",
+    "mypy>=1.4.1,<2",
+    "pytest>=7.4.0,<8",
+]
 
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.0.277"
-mypy = "^1.4.1"
-pytest = "^7.4.0"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.ruff]
 line-length = 88
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
